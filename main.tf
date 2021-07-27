@@ -10,7 +10,7 @@ provider "google" {
 #   }
 # }
 
-resource "google_compute_instance" "jumpbox" {
+resource "google_compute_instance" "nginx_server" {
   name         = "jumpbox"
   machine_type = "e2-medium"
   zone         = "ap-south2-a"
