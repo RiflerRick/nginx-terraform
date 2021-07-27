@@ -1,6 +1,5 @@
 provider "google" {
     project = "global-image-sharing"
-    region = "ap-south2"
     credentials = "svc-account-key.json"
 }
 
@@ -14,7 +13,7 @@ provider "google" {
 resource "google_compute_instance" "nginx_server" {
   name         = "jumpbox"
   machine_type = "e2-medium"
-  zone         = "ap-south2-b"
+  zone         = "ap-south2-a"
   tags = ["us-central1", "nginx-server"]
 
   boot_disk {
