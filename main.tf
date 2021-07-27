@@ -1,7 +1,7 @@
 provider "google" {
     project = "global-image-sharing"
     region = "ap-south2"
-    credentials = "/home/jenkins/svc-account-key.json"
+    credentials = "svc-account-key.json"
 }
 
 # terraform {
