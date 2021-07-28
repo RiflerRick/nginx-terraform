@@ -34,6 +34,7 @@ resource "google_compute_instance" "nginx_server" {
     }
   }
   metadata = {
+    "ssh-keys" = "jenkins:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAvSOSkwD6y0CrY20ij29MAmmXsu1OZsi8BwXvwt3pvQ jenkins"
     server = "nginx-server"
   }
   service_account {
