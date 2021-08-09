@@ -13,7 +13,7 @@ provider "google" {
 resource "google_compute_instance" "nginx_server" {
   name         = "nginx-server"
   machine_type = "e2-medium"
-  zone         = "asia-south2-b"
+  zone         = "asia-south2-a"
   tags = ["us-central1", "nginx-server"]
 
   boot_disk {
