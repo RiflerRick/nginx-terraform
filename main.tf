@@ -1,6 +1,6 @@
 provider "google" {
     project = "global-image-sharing"
-    credentials = "svc-account-key.json"
+   # credentials = "svc-account-key.json"
 }
 
 # terraform {
